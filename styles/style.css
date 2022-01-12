@@ -1,9 +1,11 @@
+
 /* font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&family=Roboto&family=Yeseva+One&display=swap');
 /* common styles */
 body{
     font-family: 'Poppins', sans-serif;
-background-color: #F3F1FF;  
+background-color: #F3F1FF; 
+ 
 }
 main{
     display: flex;
@@ -119,5 +121,32 @@ height: 117px;
  /* Mobile device */
 
  @media only screen and (max-width :688px) {
+     .container{
+         width: 100%;
+     }
+     .players, .blogs{
+         grid-template-columns: repeat(1,1fr);
+     }
+     .player, .blog{   
+     flex-direction: column;
+     }
+     .courses{
+        grid-template-columns: repeat(1,1fr);
+     }
+     }
+
+     /* ipad device */
+     @media only screen and (min-width: 668px) and (max-width: 992px) {
+         .container{
+             width: 100%;
+         }
+         .players.courses{
+             grid-template-columns: repeat(2, 1fr);
+
+         }
+         .blogs{
+             grid-template-columns: repeat(1,1fr);
+         } 
+         }
+         
      
- }
