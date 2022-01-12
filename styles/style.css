@@ -11,6 +11,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .container{
     background: #FFFFFF;
@@ -114,7 +115,7 @@ height: 117px;
     text-align: center;
     background: #FFE4E8;
     border-radius: 15px;
-    color: #FF4A60;
+    color: black;
     margin-right: 10%;
     font-size: 18px;
  }
